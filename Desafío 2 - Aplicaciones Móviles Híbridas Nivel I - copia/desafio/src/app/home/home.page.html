@@ -1,0 +1,61 @@
+<ion-header color="light">
+    <div>
+        <ion-title>
+            <div>
+                <span>cadi</span><span>f1</span>
+            </div>
+            <hr>
+            <span>academia de software</span>
+        </ion-title>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <ion-text>la academia</ion-text>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-text>certificación</ion-text>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-text>empleos</ion-text>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-text>contacto</ion-text>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-text>iniciar sesión</ion-text>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</ion-header>
+
+<ion-content>
+    <ion-slides>
+        <ion-slide *ngFor="let img of imagesBanner">
+            <ion-img src={{img}}></ion-img>
+        </ion-slide>
+    </ion-slides>
+    <section>
+        <div>
+            <article *ngFor="let c of contenidoSection">
+                <ion-thumbnail>
+                    <img src={{c.icono}} alt={{c.titulo}}>
+                </ion-thumbnail>
+                <ion-text>
+                    <h2>{{c.titulo}}</h2>
+                    <p>{{c.descripcion}}</p>
+                </ion-text>
+            </article>
+        </div>
+    </section>
+</ion-content>

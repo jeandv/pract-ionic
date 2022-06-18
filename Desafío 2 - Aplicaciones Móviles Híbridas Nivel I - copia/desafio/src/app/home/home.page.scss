@@ -1,0 +1,159 @@
+// @font-face {
+//     font-family: 'glypic';
+//     src: local("glypicitalic"), url('/desafio1/src/assets/fonts/glypic-webfont.woff2') format('woff2'),
+//         url('/desafio1/src/assets/fonts/glypic-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+ion-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+
+    div {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ion-title {
+            div {
+                width: 135px;
+                height: 40px;
+                position: relative;
+                top: 3px;
+
+                span:nth-child(1) {
+                    display: inline-block;
+                    font-family: 'Teko', sans-serif;
+                    text-transform: uppercase;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    font-style: italic;
+                    color: #00548f;
+                }
+
+                span:nth-child(2) {
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 4.5px;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    padding: 5px;
+                    margin: 10px 0 5px 5px;
+                    color: #fff;
+                    background-color: #e76100;
+                    transform: skew(-17deg);
+                    -webkit-transform: skew(-17deg);
+                    -moz-transform: skew(-17deg);
+                }
+            }
+
+            hr {
+                width: 130px;
+                border: none;
+                background-color: #000;
+            }
+
+            span:last-of-type {
+                position: relative;
+                top: -7px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-size: 0.5rem;
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+
+                li {
+                    a {
+                        display: flex;
+                        color: #00548f;
+                        font-weight: 700;
+                        font-size: .8em;
+                        border-radius: 0.3em;
+                        padding: 0.5rem 1rem;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        cursor: pointer;
+
+                        transition: all 300ms;
+
+                        &:hover {
+                            color: white;
+                            background: #e76100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+ion-img {
+    width: 100vw;
+}
+
+section {
+    width: 100%;
+    height: 260px;
+    background-color: #00548f;
+    display: flex;
+    justify-content: center;
+
+    div {
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 260px;
+            height: 260px;
+            padding: 17px;
+            line-height: 1.2em;
+            text-align: left;
+            cursor: pointer;
+
+            transition: all 300ms;
+
+            &:hover {
+                background-color: #e76100;
+            }
+
+            ion-thumbnail {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            ion-text {
+                h2 {
+                    text-transform: capitalize;
+                    font-size: 2em;
+                    font-weight: 300;
+                }
+
+                p {
+                    font-size: .8em;
+                    margin: 0.5em 0;
+                }
+            }
+        }
+    }
+}
