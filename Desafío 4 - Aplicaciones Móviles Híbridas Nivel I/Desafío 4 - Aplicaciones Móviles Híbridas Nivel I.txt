@@ -1,0 +1,13 @@
+Enunciado:
+Se requiere que atienda a los siguiente objetivos planteados: Recomendacion: para el control de mostrado de informacion, le recomiendo crear una variable indice de tipo entero que inicie su valor en cero ( 0 ) y que segun se vayan presionando los botones inferiores esta aumente o disminuya de valor, esta la puede usar para controlar la informacion a mostrar en el componente.
+
+Objetivos:
+1.- Cree una nueva "Page" llamada examen, esta debe ser maquetada en base a las imagenes suministradas.
+
+2.- Cree en el page.component.ts un arreglo de objetos, estos objetos deben contener un id, un "enunciado", y 4 opciones (option1, option2,...) Como minimo 5 de estas "preguntas".
+
+3.- Programe en la vista desarrollada en el desafio numero 3, que el boton con el simbolo (+) en el action sheet tenga una opcion para "presentar Desafio Teorico" al hacer click alli debe llevarlo a vista del PAGE de este desafio.
+
+4.- Los botones en la parte inferior del PAGE requerido en este desafio deben funcionar bajo las siguientes premisas. El boton "anterior" debe estar deshabilitado si se esta visualizando la primera pregunta.
+
+5.- El boton de Siguiente al llegar a la ultima pregunta, debe cambiar de aspecto (puede simplemente hacer que uno deje de verse y mostrar otro en su lugar) Al presionar el boton Finalizar, debe mostrar un "alert" que indique el fin del desafio. Ademas debe agregar que al hacer click en el boton (+) se despliegue un "action-sheet" y que tenga la opcion de "abandonar Desafio Teorico"

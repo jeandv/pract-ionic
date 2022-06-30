@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="goBackHome()">
+        <ion-icon name="chevron-back-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <div class="header">
+    <h3>Hola, <span id="user-name">Usuario!</span></h3>
+    <h1>Por favor inicie sesión.</h1>
+    <form class="form">
+      <ion-input type="email" placeholder="Email">
+        <ion-icon name="person"></ion-icon>
+      </ion-input>
+      <ion-input [type]="verContrasena ? 'text' : 'password'" placeholder="Contraseña">
+        <ion-icon [name]="iconoContrasena" (click)="clickMostrarContrasena()"></ion-icon>
+      </ion-input>
+      <button class="button" (click)="goBackHome()">
+        Login <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+    </form>
+    <div class="footer">
+      <h3>¿No tienes una cuenta? <span> <u> Registrate!</u></span></h3>
+    </div>
+  </div>
+</ion-content>
